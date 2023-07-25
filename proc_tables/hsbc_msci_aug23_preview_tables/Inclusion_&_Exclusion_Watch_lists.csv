@@ -1,0 +1,50 @@
+,Ticker,Name,Country,DM/EM,Remark,Pot'l flows  (USDmm),Pot'l Shares  (mm),EDT,% Move  Required for  Inclusion or  Deletion,Price as of  previous  Cutoff (18-  Apr),Price as of  run date (16-  Jun),% Change
+0,RXL FP,Rexel SA,France,DM,Addition?,338.5,14.2,6.8,14%,21.0,22.4,6.8%
+1,SSABB SS,SSAB AB,Sweden,DM,Addition?,273.9,38.0,5.8,11%,76.7,78.3,2.0%
+2,FLEX US,Flex Ltd,USA,DM,Addition?,241.5,8.9,2.1,15%,21.9,26.8,22.5%
+3,MANH US,Manhattan Associates Inc,USA,DM,Addition?,238.0,1.2,3.1,15%,157.8,191.8,21.6%
+4,SMCI US,Super Micro Computer Inc,USA,DM,Addition?,219.1,1.0,0.3,13%,115.9,230.8,99.1%
+5,7936 JP,Asics Corp,Japan,DM,Addition?,203.6,6.7,6.0,13%,"3,945.0","4,463.0",13.1%
+6,IAG SM,International Consolidated Air,Spain,DM,Addition?,149.9,71.2,4.7,8%,1.7,1.9,13.9%
+7,UAL US,United Airlines Holdings Inc,USA,DM,Addition?,87.7,1.7,0.3,4%,43.0,53.5,24.3%
+8,MAADEN AB,Alchip Technologies Ltd,Taiwan,EM,Addition?,300.7,5.1,1.1,14%,"1,280.0","1,840.0",43.8%
+9,OMAB MM,Grupo Aeroportuario del Centro,Mexico,EM,Addition?,237.6,22.5,27.2,7%,195.1,190.7,-2.3%
+10,KKC IN,Cummins India Ltd,India,EM,Addition?,227.6,10.0,10.7,11%,"1,490.0","1,843.3",23.7%
+11,FIBRAPL MM,Prologis Property Mexico SA de,Mexico,EM,Addition?,189.4,51.0,74.4,8%,63.1,64.8,2.8%
+12,TPEIR GA,Piraeus Financial Holdings SA,Greece,EM,Addition?,164.4,53.3,9.4,9%,2.4,3.0,26.7%
+13,TAWUNIYA AB,Co for Cooperative Insurance/T,Saudi Arabia,EM,Addition?,157.6,4.5,21.2,0.2%,100.6,132.2,31.4%
+14,DALBHARA IN,Dalmia Bharat Ltd,India,EM,Addition?,150.7,5.5,19.9,12%,"2,035.0","2,254.9",10.8%
+15,QNNS QD,Qatar Navigation QSC,Qatar,EM,Addition?,114.8,38.6,43.4,2%,8.5,10.3,20.6%
+16,CHDRAUIB MM,Grupo Comercial Chedraui SA de,Mexico,EM,Addition?,100.7,17.5,14.7,12%,105.8,98.4,-7.0%
+17,MARAFIQ AB,Power & Water Utility Co for J,Saudi Arabia,EM,Addition?,99.9,5.6,3.8,8%,58.3,68.4,17.3%
+18,,(Below) Assuming DEWA's FIF will be updated to 11% or more. Break-point FIF for inclusion is 11%,,,,,,,,,,
+19,DEWA UH,Dubai Electricity & Water Auth,UAE,EM,Addition?,287.5,407.7,11.0,FIF of 11%,114.0,92.0,-19.3%
+20,JMAT LN,Johnson Matthey PLC,UK,DM,Deletion?,(233.1),(10.6),8.9,-8%,"1,999.0","1,740.0",-13.0%
+21,BLND LN,British Land Co PLC/The,UK,DM,Deletion?,(220.6),(51.2),6.5,-7%,391.5,343.0,-12.4%
+22,NTGY SM,Naturgy Energy Group SA,Spain,DM,Deletion?,(213.4),(7.3),10.0,-9%,28.0,27.2,-3.1%
+23,KINVB SS,Kinnevik AB,Sweden,DM,Deletion?,(195.4),(14.2),9.3,-5%,165.2,150.3,-9.0%
+24,ST US,Sensata Technologies Holding P,USA,DM,Deletion?,(138.3),(3.1),3.3,-13%,47.5,45.3,-4.6%
+25,WBS US,Webster Financial Corp,USA,DM,Deletion?,(135.5),(3.5),2.8,-11%,38.1,38.8,1.8%
+26,WOLF US,Wolfspeed Inc,USA,DM,Deletion?,(132.1),(2.6),0.8,-8%,57.7,53.1,-8.0%
+27,AA US,Alcoa Corp,USA,DM,Deletion?,(127.1),(3.7),0.8,-5%,42.2,35.6,-15.5%
+28,FHN US,First Horizon Corp,USA,DM,Deletion?,(126.3),(10.7),0.8,-4%,18.4,11.8,-36.0%
+29,ADE NO,Adevinta ASA,Norway,DM,Deletion?,(121.5),(16.2),33.5,-11%,83.3,77.3,-7.2%
+30,MHK US,Mohawk Industries Inc,USA,DM,Deletion?,(109.2),(1.1),1.7,-6%,98.5,100.9,2.4%
+31,CLVT US,Clarivate PLC,USA,DM,Deletion?,(67.5),(7.5),1.5,-1%,9.1,9.1,-0.2%
+32,SIRI US,Sirius XM Holdings Inc,USA,DM,Deletion?,(61.3),(16.4),0.9,-1%,3.9,3.9,1.5%
+33,SANB11 BZ,Banco Santander Brasil SA,Brazil,EM,Deletion?,(173.2),(27.0),14.5,-8%,27.2,30.5,12.4%
+34,MAKRO TB,CP Axtra PCL,Thailand,EM,Deletion?,(165.9),(164.3),6.5,-10%,38.3,37.3,-2.6%
+35,MUTH IN,Muthoot Finance Ltd,India,EM,Deletion?,(125.3),(8.4),18.2,-10%,"1,050.2","1,167.9",11.2%
+36,MPHL IN,Mphasis Ltd,India,EM,Deletion?,(124.9),(5.4),10.9,-10%,"1,783.8","1,860.1",4.3%
+37,189 HK,Dongyue Group Ltd,China,EM,Deletion?,(84.1),(122.5),11.6,-5%,8.3,5.7,-31.2%
+38,MRDIY MK,MR DIY Group M Bhd,Malaysia,EM,Deletion?,(80.4),(232.0),17.8,-3%,1.6,1.5,-5.5%
+39,TOPG MK,Top Glove Corp Bhd,Malaysia,EM,Deletion?,(76.0),(393.8),11.9,-12%,1.1,1.0,-8.9%
+40,EMAAR AB,Emaar Economic City,Saudi Arabia,EM,Deletion?,(75.2),(30.2),10.8,-5%,9.9,9.7,-2.0%
+41,CCU CI,Cia Cervecerias Unidas SA,Chile,EM,Deletion?,(74.5),(9.3),34.5,-8%,"6,214.0","6,251.0",0.6%
+42,1888 HK,Kingboard Laminates Holdings L,China,EM,Deletion?,(64.5),(70.0),31.5,-12%,8.4,7.4,-12.2%
+43,MTC TB,Muangthai Capital PCL,Thailand,EM,Deletion?,(61.7),(54.8),5.2,-13%,37.0,39.5,6.8%
+44,1268 HK,China Meidong Auto Holdings Lt,China,EM,Deletion?,(60.6),(55.4),10.9,-6%,13.5,9.7,-28.5%
+45,3347 HK,Hangzhou Tigermed Consulting C,China,EM,Deletion?,(60.1),(10.3),9.1,-5%,77.7,52.3,-32.8%
+46,2869 HK,Greentown Service Group Co Ltd,China,EM,Deletion?,(57.8),(120.3),19.7,-2%,5.2,4.3,-17.8%
+47,2128 HK,China Lesso Group Holdings Ltd,China,EM,Deletion?,(57.2),(87.7),15.2,-1%,7.1,5.6,-20.8%
+48,3759 HK,Pharmaron Beijing Co Ltd,China,EM,Deletion?,(57.0),(18.5),10.2,0%,37.6,30.4,-19.2%

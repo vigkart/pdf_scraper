@@ -1,0 +1,25 @@
+,Ticker,Name,Country,DM/EM,Sector,Conviction,Pot'l flows  (USDmm),Pot'l  Shares  (mm),EDT,Price as of  previous  Cutoff (18-  Apr),Price as of  run date  (16-Jun),% Change
+0,HFG GR,HelloFresh SE,Germany,DM,Consumer Staples,Low,(188.7),(9.3),5.5,23.9,18.4,-23.00%
+1,TKWY NA,Just Eat Takeaway.com NV,Netherlands,DM,Consumer Discretionary,Medium,(175.7),(11.9),5.8,16.3,13.5,-16.94%
+2,LLC AU,Lendlease Corp Ltd,Australia,DM,Real Estate,Low,(144.6),(29.0),7.0,7.8,7.3,-7.15%
+3,VMS SP,Venture Corp Ltd,Singapore,DM,Information Technology,Low,(140.1),(11.7),8.8,17.4,16.1,-7.69%
+4,SEE US,Sealed Air Corp,USA,DM,Materials,Low,(113.8),(2.8),2.2,46.9,40.4,-13.70%
+5,UGI US,UGI Corp,USA,DM,Utilities,Low,(113.6),(4.1),1.5,34.6,27.8,-19.63%
+6,EMBRACB SS,Embracer Group AB,Sweden,DM,Communication Services,Medium,(95.6),(37.4),1.6,46.6,27.2,-41.61%
+7,4516 JP,Nippon Shinyaku Co Ltd,Japan,DM,Health Care,Low,(95.1),(2.1),6.9,"6,120.0","6,467.0",5.67%
+8,NVCR US,Novocure Ltd,USA,DM,Health Care,High,(81.8),(1.9),0.8,63.7,44.2,-30.55%
+9,AAP US,Advance Auto Parts Inc,USA,DM,Consumer Discretionary,High,(80.2),(1.2),0.3,126.7,69.2,-45.35%
+10,NVEI CN,Nuvei Corp,Canada,DM,Financials,Low,(62.2),(2.2),3.5,56.4,38.0,-32.64%
+11,LBTYA US,Liberty Global PLC,USA,DM,Communication Services,Low,(54.9),(3.2),1.6,19.0,17.2,-9.12%
+12,6753 JP,Sharp Corp/Japan,Japan,DM,Consumer Discretionary,Medium,(48.8),(9.0),1.9,975.0,767.6,-21.27%
+13,MRP SJ,Mr Price Group Ltd,South Africa,EM,Consumer Discretionary,Low,(152.8),(18.7),9.2,"14,956.0","14,818.0",-0.92%
+14,3105 TT,Win Semiconductors Corp,Taiwan,EM,Information Technology,Low,(144.8),(24.8),5.2,182.0,179.5,-1.37%
+15,TFG SJ,Foschini Group Ltd/The,South Africa,EM,Consumer Discretionary,Low,(125.4),(24.2),7.5,"9,381.0","9,433.0",0.55%
+16,ACC IN,ACC Ltd,India,EM,Materials,Low,(108.7),(4.8),7.4,"1,760.1","1,855.5",5.42%
+17,139480 KS,E-MART Inc,Korea,EM,Consumer Staples,Low,(91.1),(1.4),8.8,"100,500.0","81,300.0",-19.10%
+18,020150 KS,Lotte Energy Materials Corp,Korea,EM,Information Technology,Low,(78.3),(1.7),8.7,"66,900.0","59,200.0",-11.51%
+19,SAWAD TB,Srisawad Corp PCL,Thailand,EM,Financials,Low,(73.3),(50.1),6.2,57.0,50.8,-10.96%
+20,1385 HK,Shanghai Fudan Microelectronic,China,EM,Information Technology,Low,(56.0),(20.8),6.6,27.4,21.1,-22.99%
+21,3799 HK,Dali Foods Group Co Ltd,China,EM,Consumer Staples,Low,(52.9),(150.0),14.4,3.4,2.8,-18.10%
+22,900932 CH,Shanghai Lujiazui Finance & Tr,China,EM,Real Estate,Medium,(50.5),(80.4),70.2,0.8,0.6,-17.80%
+23,CBG TB,Carabao Group PCL,Thailand,EM,Consumer Staples,Low,(50.3),(25.6),3.6,85.8,68.3,-20.41%

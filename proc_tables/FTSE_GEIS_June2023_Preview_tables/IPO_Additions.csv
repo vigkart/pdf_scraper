@@ -1,0 +1,34 @@
+,Index Family,Name,BBG Ticker,RIC,Industry,Country,Region,Market,Event,Est. Passive Flows (USDmm),Est. Shares (mm),Total EDT
+0,All-World,Socionext Inc,6526 JP,6526.T,Technology,Japan,Asia Pacific,DM,Addition(AW),66.4,0.8,0.6
+1,All-World,Saudi Aramco Base Oil Co,LUBEREF AB,2223.SE,Energy,Saudi Arabia,EMEA,EM,Addition(AW),66.2,2.0,1.9
+2,All-World,Power & Water Utility Co for J,MARAFIQ AB,2083.SE,Utilities,Saudi Arabia,EMEA,EM,Addition(AW),49.8,3.0,1.8
+3,Small Cap,Fenbi Ltd,2469 HK,2469.HK,Consumer Discretionary,Hong Kong,Asia Pacific,DM,Addition(SC),45.5,28.3,23.3
+4,All-World,Arabian Drilling Co,ARABIAND AB,2381.SE,Energy,Saudi Arabia,EMEA,EM,Addition(AW),42.4,1.1,8.2
+5,All-World,Emirates Central Cooling Syste,EMPOWER UH,EMPOWER.DU,Utilities,United Arab Emirates,EMEA,EM,Addition(AW),35.5,80.0,10.8
+6,Small Cap,Riyadh Cables Group Co,RIYADHCA AB,4142.SE,Industrials,Saudi Arabia,EMEA,EM,Addition(SC),27.8,1.8,5.9
+7,Small Cap,Global Health Ltd/India,MEDANTA IN,GLOH.NS,Health Care,India,Asia Pacific,EM,Addition(SC),20.6,3.3,11.1
+8,Small Cap,Betagro PCL,BTG TB,BTG.BK,Consumer Staples,Thailand,Asia Pacific,EM,Addition(SC),18.9,27.1,13.2
+9,All-World,Astor Transformator Enerji Tur,ASTOR TI,ASTOR.IS,Industrials,Turkey,EMEA,EM,Addition(AW),17.5,8.4,0.3
+10,Small Cap,Daiei Kankyo Co Ltd,9336 JP,9336.T,Utilities,Japan,Asia Pacific,DM,Addition(SC),15.6,1.1,2.2
+11,All-World,Ahlatci Dogal Gaz Dagitim Ener,AHGAZ TI,AHGAZ.IS,Utilities,Turkey,EMEA,EM,Addition(AW),8.5,2.1,1.5
+12,Small Cap,Ithaca Energy PLC,ITH LN,ITH.L,Energy,United Kingdom,EMEA,DM,Addition(SC),5.0,2.5,19.3
+13,All-World,Alfa Solar Enerji Sanayi VE Ti,ALFAS TI,ALFAS.IS,Energy,Turkey,EMEA,EM,Addition(AW),4.6,0.4,0.2
+14,All-World,Alibaba Group Holding (P Chip),9988 HK,9988.HK,Retail,China,Asia Pacific,EM,IWF Inc,710.2,69.4,1.6
+15,All-World,Kotak Mahindra Bank,KMB IN,KTKM.NS,Banks,India,Asia Pacific,EM,IWF Inc,94.7,4.0,1.0
+16,All-World,Heineken NV,HEIA NA,HEIN.AS,Consumer Staples,Netherlands,EMEA,DM,Share Inc,34.0,0.3,0.5
+17,All-World,ANTA Sports Products Ltd,2020 HK,2020.HK,Consumer Discretionary,China,Asia Pacific,EM,Share Inc,22.8,2.0,0.1
+18,All-World,DSV A/S,dsv dc,DSV.CO,Industrials,Denmark,EMEA,DM,IWF Inc,21.6,0.1,0.5
+19,All-World,Coles Group Ltd,COL AU,COL.AX,Consumer Staples,Australia,Asia Pacific,DM,IWF Inc,16.0,1.3,0.4
+20,All-World,Samvardhana Motherson Internat,MOTHERSO IN,SAMD.NS,Consumer Discretionary,India,Asia Pacific,EM,IWF Inc,8.8,9.2,0.9
+21,All-World,JDE Peet's NV,JDEP NA,JDEP.AS,Consumer Staples,Netherlands,EMEA,DM,IWF Inc,7.9,0.3,0.8
+22,Small Cap,Zealand Pharma A/S,ZEAL DC,ZELA.CO,Health Care,Denmark,EMEA,DM,Share Inc,6.3,0.2,0.7
+23,Small Cap,National Storage REIT,NSR AU,NSR.AX,Real Estate,Australia,Asia Pacific,DM,Share Inc,6.3,3.7,0.8
+24,Small Cap,TORM PLC,TRMDA DC,TRMDa.CO,Industrials,Denmark,EMEA,DM,IWF Inc,4.4,0.2,0.6
+25,Small Cap,NEL ASA,NEL NO,NEL.OL,Energy,Norway,EMEA,DM,Share Inc,4.2,3.1,0.6
+26,Small Cap,Kemira Oyj,KEMIRA FH,KEMIRA.HE,Basic Materials,Finland,EMEA,DM,IWF Inc,4.1,0.2,1.3
+27,Small Cap,Diversified Energy Co PLC,DEC LN,DEC.L,Energy,United Kingdom,EMEA,DM,Share Inc,4.0,3.5,1.8
+28,Small Cap,Capstone Copper Corp,CS CN,CS.TO,Basic Materials,Canada,Americas,DM,Share Inc,3.8,0.8,0.2
+29,Small Cap,CCC SA,CCC PW,CCCP.WA,Consumer Discretionary,Poland,EMEA,DM,Share Inc,3.6,0.3,0.7
+30,All-World,Diagnosticos da America SA,DASA3 BZ,DASA3.SA,Health Care,Brazil,Americas,EM,Share Inc,2.3,1.0,1.3
+31,All-World,Bachem Holding AG,BANB SW,BANB.S,Health Care,Switzerland,EMEA,DM,Share Inc,1.9,0.0,0.3
+32,All-World,Centrica PLC,CNA LN,CNA.L,Utilities,United Kingdom,EMEA,DM,IWF Inc,0.3,0.2,0.0
