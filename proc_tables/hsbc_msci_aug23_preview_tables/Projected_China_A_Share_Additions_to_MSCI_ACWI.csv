@@ -1,21 +1,21 @@
 ,Ticker,Name,Country,DM/EM,Sector,Conviction,Pot'l flows  (USDmm),Pot'l  Shares  (mm),EDT,Price as of  previous  Cutoff (18-  Apr),Price as of  run date  (16-Jun),% Change
-0,688072 CH688072 C1,Piotech Inc,China A,EM,Information Technology,High,27.6,0.5,0.3,434.0,428.0,-1.4%
-1,300502 CH300502 C2,Eoptolink Technology Inc Ltd,China A,EM,Information Technology,High,29.9,3.1,0.1,57.1,68.6,20.3%
-2,300394 CH300394 C2,Suzhou TFC Optical Communicati,China A,EM,Information Technology,High,25.9,1.7,0.1,65.3,107.3,64.4%
-3,603000 CH603000 C1,People.cn Co Ltd,China A,EM,Communication Services,High,23.9,4.8,0.1,22.4,35.4,57.7%
-4,002517 CH002517 C2,Kingnet Network Co Ltd,China A,EM,Communication Services,High,22.8,9.4,0.1,13.2,17.3,31.1%
-5,601928 CH601928 C1,Jiangsu Phoenix Publishing & M,China A,EM,Communication Services,High,21.3,11.1,0.5,11.0,13.7,24.8%
-6,300866 CH300866 C2,Anker Innovations Technology C,China A,EM,Information Technology,Low,17.3,1.5,0.4,67.8,83.5,23.2%
-7,600129 CH600129 C1,Chongqing Taiji Industry Group,China A,EM,Health Care,Medium,20.2,2.4,0.3,42.8,59.2,38.6%
-8,300058 CH300058 C2,Bluefocus Intelligent Communic,China A,EM,Communication Services,Low,18.1,10.9,0.0,8.6,11.9,37.5%
-9,600100 CH600100 C1,Tsinghua Tongfang Co Ltd,China A,EM,Information Technology,Medium,19.3,14.6,0.1,7.9,9.4,19.5%
-10,600733 CH600733 C1,BAIC BluePark New Energy Techn,China A,EM,Consumer Discretionary,Medium,18.9,24.3,0.6,6.0,5.5,-7.4%
-11,600060 CH600060 C1,Hisense Visual Technology Co L,China A,EM,Consumer Discretionary,Medium,18.7,5.7,0.7,21.6,23.4,8.4%
-12,002262 CH002262 C2,Jiangsu Nhwa Pharmaceutical Co,China A,EM,Health Care,Low,18.2,4.4,0.7,27.9,29.6,6.1%
-13,600977 CH600977 C1,China Film Co Ltd,China A,EM,Communication Services,Low,18.2,8.2,0.2,14.9,15.9,6.4%
-14,600066 CH600066 C1,Yutong Bus Co Ltd,China A,EM,Industrials,Low,18.0,9.7,0.5,12.1,13.3,9.6%
-15,002281 CH002281 C2,Accelink Technologies Co Ltd,China A,EM,Information Technology,Low,17.6,3.4,0.1,27.0,36.7,35.7%
-16,600637 CH600637 C1,Oriental Pearl Group Co Ltd,China A,EM,Communication Services,Low,17.5,14.9,0.4,8.1,8.4,3.3%
-17,002865 CH002865 C2,Hainan Drinda New Energy Techn,China A,EM,Information Technology,Low,17.4,0.9,0.1,97.0,142.5,46.9%
-18,601179 CH601179 C1,China XD Electric Co Ltd,China A,EM,Industrials,Low,17.2,22.4,0.5,5.6,5.5,-1.8%
-19,603728 CH603728 C1,Shanghai Moons' Electric Co Lt,China A,EM,Industrials,Low,17.0,1.8,0.2,44.0,66.1,50.2%
+0,688072 CH,Piotech Inc,China A,EM,Information Technology,High,27.6,0.5,0.3,434.0,428.0,-1.4%
+1,300502 CH,Eoptolink Technology Inc Ltd,China A,EM,Information Technology,High,29.9,3.1,0.1,57.1,68.6,20.3%
+2,300394 CH,Suzhou TFC Optical Communicati,China A,EM,Information Technology,High,25.9,1.7,0.1,65.3,107.3,64.4%
+3,603000 CH,People.cn Co Ltd,China A,EM,Communication Services,High,23.9,4.8,0.1,22.4,35.4,57.7%
+4,002517 CH,Kingnet Network Co Ltd,China A,EM,Communication Services,High,22.8,9.4,0.1,13.2,17.3,31.1%
+5,601928 CH,Jiangsu Phoenix Publishing & M,China A,EM,Communication Services,High,21.3,11.1,0.5,11.0,13.7,24.8%
+6,300866 CH,Anker Innovations Technology C,China A,EM,Information Technology,Low,17.3,1.5,0.4,67.8,83.5,23.2%
+7,600129 CH,Chongqing Taiji Industry Group,China A,EM,Health Care,Medium,20.2,2.4,0.3,42.8,59.2,38.6%
+8,300058 CH,Bluefocus Intelligent Communic,China A,EM,Communication Services,Low,18.1,10.9,0.0,8.6,11.9,37.5%
+9,600100 CH,Tsinghua Tongfang Co Ltd,China A,EM,Information Technology,Medium,19.3,14.6,0.1,7.9,9.4,19.5%
+10,600733 CH,BAIC BluePark New Energy Techn,China A,EM,Consumer Discretionary,Medium,18.9,24.3,0.6,6.0,5.5,-7.4%
+11,600060 CH,Hisense Visual Technology Co L,China A,EM,Consumer Discretionary,Medium,18.7,5.7,0.7,21.6,23.4,8.4%
+12,002262 CH,Jiangsu Nhwa Pharmaceutical Co,China A,EM,Health Care,Low,18.2,4.4,0.7,27.9,29.6,6.1%
+13,600977 CH,China Film Co Ltd,China A,EM,Communication Services,Low,18.2,8.2,0.2,14.9,15.9,6.4%
+14,600066 CH,Yutong Bus Co Ltd,China A,EM,Industrials,Low,18.0,9.7,0.5,12.1,13.3,9.6%
+15,002281 CH,Accelink Technologies Co Ltd,China A,EM,Information Technology,Low,17.6,3.4,0.1,27.0,36.7,35.7%
+16,600637 CH,Oriental Pearl Group Co Ltd,China A,EM,Communication Services,Low,17.5,14.9,0.4,8.1,8.4,3.3%
+17,002865 CH,Hainan Drinda New Energy Techn,China A,EM,Information Technology,Low,17.4,0.9,0.1,97.0,142.5,46.9%
+18,601179 CH,China XD Electric Co Ltd,China A,EM,Industrials,Low,17.2,22.4,0.5,5.6,5.5,-1.8%
+19,603728 CH,Shanghai Moons' Electric Co Lt,China A,EM,Industrials,Low,17.0,1.8,0.2,44.0,66.1,50.2%

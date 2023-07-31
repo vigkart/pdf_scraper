@@ -120,7 +120,38 @@ def footer(df):
             
     df = df.iloc[:bottom]
     return df
-    
+
+# function that drops empty rows of df, this handles '(below)' rows
+def drop_empty_rows(df):   
+    for index,row in df.iterrows():
+        if row.apply(is_number).any() == False:
+            df.drop(index, inplace=True)
+    return df
+
+# list of valid MSCI EM/DM Countries
+countries = ["Canada", "USA", "Austria", "Belgium", "Denmark", "Finland", "France", 
+             "Germany", "Ireland", "Israel", "Italy", "Netherlands", "Norway", 
+             "Portugal", "Spain", "Sweden", "Switzerland", "UK", "Australia", 
+             "Hong Kong", "Japan", "New Zealand", "Singapore", "Brazil", "Chile", 
+             "Colombia", "Mexico", "Peru", "Czech Republic", "Egypt", "Greece", 
+             "Hungary", "Kuwait", "Poland", "Qatar", "Saudi Arabia", "South Africa", 
+             "Turkey", "UAE", "China", "India", "Indonesia", "Korea", "Malaysia", 
+             "Philippines", "Taiwan", "Thailand"]
+
+# fixes the countries that didn't format correctly
+def fix_country(df):
+    if 'Country' in df.columns:
+        nan_rows = df['Country'].isna()
+        missing_countries = nan_rows[nan_rows].index.tolist()
+        
+        for i in missing_countries:
+            for country in countries:
+                if country in df['Name'][i]:
+                    df['Name'][i] = df['Name'][i].replace(country, '')
+                    df['Country'][i] = country
+    return df
+
+
 def merge_columns_with_blank_headers(df):
     df_new = df.copy()
     i = 0
@@ -160,6 +191,10 @@ def handle_overflow(main_df, df):
     return main_df
 
 
+def china_ticker_fix(df):
+    df['Ticker'] = df['Ticker'].apply(lambda x: x[:x.find('CH')+2])
+    return df
+
 # Actual Scrape function that outputs a csv the table on the page
 def scrape_page(path, page_num, output_path):
     tables = camelot.read_pdf(path, 
@@ -179,6 +214,8 @@ def scrape_page(path, page_num, output_path):
         name = get_name(df, page_num, type)
         df = header(df, type)
         df = footer(df)
+        df = drop_empty_rows(df)
+        df = fix_country(df)
         df = merge_columns_with_blank_headers(df)
     except ValueError:
         # Handling a one line table that was formatted incorrectly
@@ -196,6 +233,9 @@ def scrape_page(path, page_num, output_path):
     if os.path.exists(output):
         main_df = pd.read_csv(output, index_col=0)
         df = pd.concat([main_df,df], ignore_index=True)
+
+    if 'china' in output.lower():
+        df = china_ticker_fix(df)
 
     df.to_csv(output)
     print(f"Done with page {page_num} in {output_path}")

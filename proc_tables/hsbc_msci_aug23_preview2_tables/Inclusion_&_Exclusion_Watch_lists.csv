@@ -16,30 +16,29 @@
 14,CHDRAUIB MM,Grupo Comercial Chedraui SA de,Mexico,EM,Addition?,100.0,17.4,29.6,9%,105.8,97.7,-7.6%
 15,TTB TB,TMBThanachart Bank PCL,Thailand,EM,Addition?,77.2,"1,735.2",3.3,4%,1.4,1.6,9.2%
 16,6066 HK,CSC Financial Co Ltd,China,EM,Addition?,71.2,70.5,19.8,15%,8.3,8.1,-2.3%
-17,,(Below) Assuming DEWA's FIF will be updated to 11% or more. Break-point FIF for inclusion is 11%,,,,,,,,,,
-18,DEWA UH,Dubai Electricity & Water Auth,UAE,EM,Addition?,286.4,391.1,9.9,FIF of 11%,2.5,2.6,4.4%
-19,PSN LN,Persimmon PLC,UK,DM,Deletion?,(237.4),(18.2),8.8,-12%,"1,287.0","1,025.5",-20.3%
-20,JMAT LN,Johnson Matthey PLC,UK,DM,Deletion?,(232.1),(10.4),9.5,-10%,"1,999.0","1,746.0",-12.7%
-21,NTGY SM,Naturgy Energy Group SA,Spain,DM,Deletion?,(213.7),(7.1),12.9,-12%,28.0,27.3,-2.8%
-22,KINVB SS,Kinnevik AB,Sweden,DM,Deletion?,(191.3),(13.9),11.4,-5%,165.2,149.4,-9.6%
-23,LLC AU,Lendlease Corp Ltd,Australia,DM,Deletion?,(149.4),(27.9),6.3,-3%,7.8,7.8,-1.0%
-24,WOLF US,Wolfspeed Inc,USA,DM,Deletion?,(138.3),(2.4),0.9,-11%,57.7,55.6,-3.6%
-25,ST US,Sensata Technologies Holding P,USA,DM,Deletion?,(137.2),(3.1),3.7,-11%,47.5,45.0,-5.4%
-26,BALDB SS,Fastighets AB Balder,Sweden,DM,Deletion?,(135.4),(35.6),8.0,-13%,48.1,39.4,-18.1%
-27,AIZ US,Assurant Inc,USA,DM,Deletion?,(133.1),(1.1),2.3,-8%,117.3,125.7,7.2%
-28,WBS US,Webster Financial Corp,USA,DM,Deletion?,(131.9),(3.4),2.9,-7%,38.1,37.8,-0.9%
-29,MHK US,Mohawk Industries Inc,USA,DM,Deletion?,(111.7),(1.1),1.7,-6%,98.5,103.2,4.7%
-30,ADE NO,Adevinta ASA,Norway,DM,Deletion?,(109.2),(16.9),44.4,-4%,83.3,70.4,-15.5%
-31,CLVT US,Clarivate PLC,USA,DM,Deletion?,(70.8),(7.4),1.7,-5%,9.1,9.5,4.6%
-32,SIRI US,Sirius XM Holdings Inc,USA,DM,Deletion?,(70.5),(15.2),0.8,-13%,3.9,4.5,16.8%
-33,SANB11 BZ,Banco Santander Brasil SA,Brazil,EM,Deletion?,(173.8),(26.5),16.1,-9%,27.2,30.6,12.8%
-34,MPHL IN,Mphasis Ltd,India,EM,Deletion?,(127.1),(5.5),10.6,-10%,"1,783.8","1,895.1",6.2%
-35,189 HK,Dongyue Group Ltd,China,EM,Deletion?,(86.1),(110.6),10.9,-11%,8.3,5.9,-29.4%
-36,VAPORES CI,Cia Sud Americana de Vapores S,Chile,EM,Deletion?,(76.3),"(1,112.2)",24.1,-5%,86.0,54.5,-36.7%
-37,CCU CI,Cia Cervecerias Unidas SA,Chile,EM,Deletion?,(76.1),(9.3),49.3,-5%,"6,214.0","6,465.0",4.0%
-38,EMAAR AB,Emaar Economic City,Saudi Arabia,EM,Deletion?,(72.2),(28.4),10.2,-5%,9.9,9.4,-5.8%
-39,KOZAL TI,Koza Altin Isletmeleri AS,Turkey,EM,Deletion?,(66.7),(64.0),0.6,-12%,23.6,24.8,5.1%
-40,HLFG MK,Hong Leong Financial Group Bhd,Malaysia,EM,Deletion?,(63.4),(16.9),108.7,-13%,18.1,17.7,-2.4%
-41,MTC TB,Muangthai Capital PCL,Thailand,EM,Deletion?,(60.0),(52.2),6.0,-10%,37.0,39.3,6.1%
-42,251270 KS,Netmarble Corp,Korea,EM,Deletion?,(58.5),(1.6),10.3,-7%,"69,000.0","49,100.0",-28.8%
-43,1268 HK,China Meidong Auto Holdings Lt,China,EM,Deletion?,(56.7),(42.8),8.3,-4%,13.5,9.1,-33.0%
+17,DEWA UH,Dubai Electricity & Water Auth,UAE,EM,Addition?,286.4,391.1,9.9,FIF of 11%,2.5,2.6,4.4%
+18,PSN LN,Persimmon PLC,UK,DM,Deletion?,(237.4),(18.2),8.8,-12%,"1,287.0","1,025.5",-20.3%
+19,JMAT LN,Johnson Matthey PLC,UK,DM,Deletion?,(232.1),(10.4),9.5,-10%,"1,999.0","1,746.0",-12.7%
+20,NTGY SM,Naturgy Energy Group SA,Spain,DM,Deletion?,(213.7),(7.1),12.9,-12%,28.0,27.3,-2.8%
+21,KINVB SS,Kinnevik AB,Sweden,DM,Deletion?,(191.3),(13.9),11.4,-5%,165.2,149.4,-9.6%
+22,LLC AU,Lendlease Corp Ltd,Australia,DM,Deletion?,(149.4),(27.9),6.3,-3%,7.8,7.8,-1.0%
+23,WOLF US,Wolfspeed Inc,USA,DM,Deletion?,(138.3),(2.4),0.9,-11%,57.7,55.6,-3.6%
+24,ST US,Sensata Technologies Holding P,USA,DM,Deletion?,(137.2),(3.1),3.7,-11%,47.5,45.0,-5.4%
+25,BALDB SS,Fastighets AB Balder,Sweden,DM,Deletion?,(135.4),(35.6),8.0,-13%,48.1,39.4,-18.1%
+26,AIZ US,Assurant Inc,USA,DM,Deletion?,(133.1),(1.1),2.3,-8%,117.3,125.7,7.2%
+27,WBS US,Webster Financial Corp,USA,DM,Deletion?,(131.9),(3.4),2.9,-7%,38.1,37.8,-0.9%
+28,MHK US,Mohawk Industries Inc,USA,DM,Deletion?,(111.7),(1.1),1.7,-6%,98.5,103.2,4.7%
+29,ADE NO,Adevinta ASA,Norway,DM,Deletion?,(109.2),(16.9),44.4,-4%,83.3,70.4,-15.5%
+30,CLVT US,Clarivate PLC,USA,DM,Deletion?,(70.8),(7.4),1.7,-5%,9.1,9.5,4.6%
+31,SIRI US,Sirius XM Holdings Inc,USA,DM,Deletion?,(70.5),(15.2),0.8,-13%,3.9,4.5,16.8%
+32,SANB11 BZ,Banco Santander Brasil SA,Brazil,EM,Deletion?,(173.8),(26.5),16.1,-9%,27.2,30.6,12.8%
+33,MPHL IN,Mphasis Ltd,India,EM,Deletion?,(127.1),(5.5),10.6,-10%,"1,783.8","1,895.1",6.2%
+34,189 HK,Dongyue Group Ltd,China,EM,Deletion?,(86.1),(110.6),10.9,-11%,8.3,5.9,-29.4%
+35,VAPORES CI,Cia Sud Americana de Vapores S,Chile,EM,Deletion?,(76.3),"(1,112.2)",24.1,-5%,86.0,54.5,-36.7%
+36,CCU CI,Cia Cervecerias Unidas SA,Chile,EM,Deletion?,(76.1),(9.3),49.3,-5%,"6,214.0","6,465.0",4.0%
+37,EMAAR AB,Emaar Economic City,Saudi Arabia,EM,Deletion?,(72.2),(28.4),10.2,-5%,9.9,9.4,-5.8%
+38,KOZAL TI,Koza Altin Isletmeleri AS,Turkey,EM,Deletion?,(66.7),(64.0),0.6,-12%,23.6,24.8,5.1%
+39,HLFG MK,Hong Leong Financial Group Bhd,Malaysia,EM,Deletion?,(63.4),(16.9),108.7,-13%,18.1,17.7,-2.4%
+40,MTC TB,Muangthai Capital PCL,Thailand,EM,Deletion?,(60.0),(52.2),6.0,-10%,37.0,39.3,6.1%
+41,251270 KS,Netmarble Corp,Korea,EM,Deletion?,(58.5),(1.6),10.3,-7%,"69,000.0","49,100.0",-28.8%
+42,1268 HK,China Meidong Auto Holdings Lt,China,EM,Deletion?,(56.7),(42.8),8.3,-4%,13.5,9.1,-33.0%

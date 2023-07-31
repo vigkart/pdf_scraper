@@ -1,7 +1,7 @@
 ,Ticker,Name,Country,DM/EM,Sector,Conviction,Pot'l flows  (USDmm),Pot'l  Shares  (mm),EDT,Price as of  previous  Cutoff (18-  Apr),Price as of  run date  (30-Jun),% Change
 0,POWF IN,Melrose Industries PLC,UK,DM,Industrials,High,495.0,77.0,7.9,350.3,506.2,44.5%
 1,"BESI NA
-SCI SP",BE Semiconductor Industries NV Netherlands,,DM,Information Technology,High,475.6,4.4,3.3,78.4,99.3,26.6%
+SCI SP",BE Semiconductor Industries NV ,Netherlands,DM,Information Technology,High,475.6,4.4,3.3,78.4,99.3,26.6%
 2,3808 HK,Jabil Inc,USA,DM,Information Technology,High,279.0,2.6,2.0,84.2,107.9,28.2%
 3,MRO LN,Stantec Inc,Canada,DM,Industrials,High,249.9,3.8,9.6,79.4,86.5,8.9%
 4,SRPT US,Penumbra Inc,USA,DM,Health Care,High,243.1,0.7,2.1,271.5,344.1,26.7%
@@ -17,7 +17,7 @@ TTB TB",DraftKings Inc,USA,DM,Consumer Discretionary,High,203.2,7.6,0.8,20.9,26.
 13,086520 KS,Ecopro Co Ltd,Korea,EM,Materials,High,808.8,1.4,1.3,"656,000.0","754,000.0",14.9%
 14,2376 TT,Gigabyte Technology Co Ltd,Taiwan,EM,Information Technology,High,289.5,37.0,1.4,135.5,243.5,79.7%
 15,KKC IN,Cummins India Ltd,India,EM,Industrials,High,239.1,10.1,15.2,"1,490.0","1,943.1",30.4%
-16,HDFCAMC IN,HDFC Asset Management Co LtdIndia,,EM,Financials,High,217.5,7.8,3.1,"1,810.9","2,295.7",26.8%
+16,HDFCAMC IN,HDFC Asset Management Co Ltd,India,EM,Financials,High,217.5,7.8,3.1,"1,810.9","2,295.7",26.8%
 17,035900 KS,JYP Entertainment Corp,Korea,EM,Communication Services,High,205.3,2.1,4.8,"87,800.0","130,800.0",49.0%
 18,POWF IN,Power Finance Corp Ltd,India,EM,Financials,Medium,202.4,76.9,6.6,161.8,215.9,33.5%
 19,TAWUNIYA AB,Co for Cooperative Insurance/T,Saudi Arabia,EM,Financials,High,166.5,4.5,21.1,100.6,140.0,39.2%
