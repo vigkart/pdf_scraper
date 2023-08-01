@@ -32,6 +32,8 @@ def get_name(df, page_num, type):
 # Helper method for header(), footer() and for handling small tables
 def is_number(x):
     try:
+        if isinstance(x, str):
+            x = x.replace('(', '').replace(')', '')
         float(x)
         return True
     except (ValueError, TypeError):
@@ -120,7 +122,85 @@ def footer(df):
             
     df = df.iloc[:bottom]
     return df
-    
+
+# function that drops empty rows of df, this handles '(below)' rows
+def drop_empty_rows(df):   
+    for index,row in df.iterrows():
+        if row.apply(is_number).any() == False:
+            df.drop(index, inplace=True)
+    return df
+
+# # list of FTSE countries pulled from: https://research.ftserussell.com/products/downloads/FTSE_Global_Equity_Index_Series.pdf
+# ftse_countries = ["Australia", "Hong Kong", "India", "Indonesia", "Malaysia", 
+#                   "New Zealand", "Pakistan", "Philippines", "Singapore", "Korea", 
+#                   "Taiwan", "Thailand", "China", "Japan", "Austria", "Belgium", 
+#                   "Luxembourg", "Denmark", "Finland", "France", "Germany", "Ireland",
+#                   "Italy", "Netherlands", "Norway", "Poland", "Portugal", "Spain", 
+#                   "Sweden", "Switzerland", "UK", "Czech Republic", "Greece", "Hungary",
+#                   "Iceland", "Romania", "Turkey", "Brazil", "Chile", "Colombia", "Mexico",
+#                   "Egypt", "Israel", "Kuwait", "Qatar", "Saudi Arabia", "South Africa",
+#                   "UAE", "Canada", "USA"]
+
+# # list of valid MSCI EM/DM Countries pulled from: https://www.msci.com/our-solutions/indexes/market-classification
+# msci_countries = ["Canada", "USA", "Austria", "Belgium", "Denmark", "Finland", "France", 
+#                  "Germany", "Ireland", "Israel", "Italy", "Netherlands", "Norway", 
+#                  "Portugal", "Spain", "Sweden", "Switzerland", "UK", "Australia", 
+#                  "Hong Kong", "Japan", "New Zealand", "Singapore", "Brazil", "Chile", 
+#                  "Colombia", "Mexico", "Peru", "Czech Republic", "Egypt", "Greece", 
+#                  "Hungary", "Kuwait", "Poland", "Qatar", "Saudi Arabia", "South Africa", 
+#                  "Turkey", "UAE", "China", "India", "Indonesia", "Korea", "Malaysia", 
+#                  "Philippines", "Taiwan", "Thailand"]
+
+# Combined list of FTSE and MSCI countries
+countries = ['Sweden', 'Romania', 'Hungary', 'Australia', 'UAE', 'Taiwan', 'Turkey', 'Poland', 'Egypt', 
+            'Indonesia', 'Colombia', 'Saudi Arabia', 'Israel', 'Brazil', 'Thailand', 'Portugal', 'Spain', 
+            'Luxembourg', 'Norway', 'Greece', 'Ireland', 'Kuwait', 'South Africa', 'China', 'Mexico', 
+            'Denmark', 'Singapore', 'Malaysia', 'Austria', 'France', 'Iceland', 'Pakistan', 'India', 'Peru', 
+            'Belgium', 'Chile', 'Philippines', 'Qatar', 'Korea', 'New Zealand', 'Germany', 'Switzerland', 
+            'Hong Kong', 'Netherlands', 'Italy', 'Finland', 'Czech Republic', 'Japan', 'Canada', 'USA', 'UK']
+
+# fixes the countries that didn't format correctly
+def fix_country(df):
+    if 'Country' in df.columns:
+        df['Country'] = df['Country'].replace('', np.nan)
+        nan_rows = df['Country'].isna()
+        missing_countries = nan_rows[nan_rows].index.tolist()
+        country_index = df.columns.get_loc('Country')
+                    
+        for i in missing_countries:
+            for country in countries:
+                if df.iat[i, country_index-1].endswith(country):
+                    df['Country'][i] = country
+                    df.iat[i, country_index-1] = df.iat[i, country_index-1].replace(country, '')
+                
+                elif df.iat[i, country_index+1].startswith(country):
+                    df['Country'][i] = country
+                    df.iat[i, country_index+1] = df.iat[i, country_index+1].replace(country, '')
+        df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+    return df
+
+# list of valid regions for ftse files that are missing proper region formats
+regions = ["Asia Pacific", " Americas", "EMEA"]
+
+def fix_region(df):
+    if 'Region' in df.columns:
+        df['Region'] = df['Region'].replace('', np.nan)
+        nan_rows = df['Region'].isna()
+        missing_region = nan_rows[nan_rows].index.tolist()
+        region_index = df.columns.get_loc('Region')
+
+        for i in missing_region:
+            for region in regions:
+                if df.iat[i, region_index-1].endswith(region):
+                    df['Region'][i] = region
+                    df.iat[i, region_index-1] = df.iat[i, region_index-1].replace(region, '')
+
+                elif df.iat[i, region_index+1].endswith(region):
+                    df['Region'][i] = region
+                    df.iat[i, region_index+1] = df.iat[i, region_index-1].replace(region, '')
+        df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+    return df
+
 def merge_columns_with_blank_headers(df):
     df_new = df.copy()
     i = 0
@@ -160,6 +240,10 @@ def handle_overflow(main_df, df):
     return main_df
 
 
+def china_ticker_fix(df):
+    df['Ticker'] = df['Ticker'].apply(lambda x: x[:x.find('CH')+2])
+    return df
+
 # Actual Scrape function that outputs a csv the table on the page
 def scrape_page(path, page_num, output_path):
     tables = camelot.read_pdf(path, 
@@ -175,11 +259,15 @@ def scrape_page(path, page_num, output_path):
         
     # Processing dataframe using helper methods
     df = tables[0].df
+    df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x) # stripping whitespace
     try:
         name = get_name(df, page_num, type)
         df = header(df, type)
         df = footer(df)
+        df = drop_empty_rows(df)
         df = merge_columns_with_blank_headers(df)
+        df = fix_country(df)
+        df = fix_region(df)
     except ValueError:
         # Handling a one line table that was formatted incorrectly
         df = tables[0].df
@@ -197,9 +285,19 @@ def scrape_page(path, page_num, output_path):
         main_df = pd.read_csv(output, index_col=0)
         df = pd.concat([main_df,df], ignore_index=True)
 
+    if 'china' in output.lower():
+        df = china_ticker_fix(df)
+
     df.to_csv(output)
     print(f"Done with page {page_num} in {output_path}")
 
+    # verification of no empty cells:
+    # df.replace("", np.nan, inplace=True)
+    # null_rows = df[df.isnull().any(axis=1)]
+    # if not null_rows.empty:
+    #     print(null_rows)
+    # else:
+    #     print("There are no rows with null values.")
 
 
 # Helper function that calls scrape_page for each page
@@ -237,5 +335,3 @@ for file in files:
     if not os.path.exists(output_path):
         os.makedirs(output_path)
     scrape(path, output_path)
-
-
