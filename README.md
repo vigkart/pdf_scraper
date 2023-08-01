@@ -23,8 +23,8 @@ The PDF Scraper is a tool designed for extracting and processing tables from PDF
    - **china_ticker_fix():** Handles specific formatting issues related to Chinese securities' tickers.
 
    NOTES:
-     i. The 'type' parameter in many functions helps identify whether the PDF is an 'MSCI' or 'FTSE' formatted document.
-     ii. **scrape_page()** checks if a table is an extension of another previously parsed tables, then it merges them
+   i. The 'type' parameter in many functions helps identify whether the PDF is an 'MSCI' or 'FTSE' formatted document.
+   ii. **scrape_page()** checks if a table is an extension of another previously parsed tables, then it merges them
 
 ## Known Issues and Potential Resolutions
 
