@@ -23,19 +23,17 @@ The PDF Scraper is a tool designed for extracting and processing tables from PDF
    - **china_ticker_fix():** Handles specific formatting issues related to Chinese securities' tickers.
 
    NOTES:
-   - The 'type' parameter in many functions helps identify whether the PDF is an 'MSCI' or 'FTSE' formatted document.
+   - The `type` parameter in many functions helps identify whether the PDF is an 'MSCI' or 'FTSE' formatted document.
    - **scrape_page()** checks if a table is an extension of another previously parsed tables, then it merges them
 
 ## Known Issues and Potential Resolutions
 
-1. **Tickers:** Certain tickers, particularly in MSCI previews (page 4 tables), may contain duplicate or random strings. Potential resolutions include:
-   - Using a database of tickers to match names.
-   - Web scraping with Selenium WebDriver to find and match tickers.
-   - May have to use AI to match company names in database to company names in tables
+**Tickers:** Certain tickers, particularly in MSCI previews (page 4 tables), may contain duplicate or random strings. Potential resolutions include:
+- Using a database of tickers to match names.
+- Web scraping with Selenium WebDriver to find and match tickers.
+- May have to use AI to match company names in database to company names in tables
 
-2. **Table Formatting:** The script handles various formatting issues, such as incorrect column separation or corrupted strings, with the help of `fix_country()`, `fix_region()`, and `china_ticker_fix()` functions.
-
-3. **Functionality Limitation:** The script only works with security level flow tables. For diagrams and charts, a different approach will be required.
+**Functionality Limitation:** The script only works with security level flow tables. For diagrams and charts, a different approach will be required.
 
 ## Usage
 - I recommend running this in a Conda environment as that is where Camelot works best
