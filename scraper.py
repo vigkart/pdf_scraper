@@ -32,6 +32,8 @@ def get_name(df, page_num, type):
 # Helper method for header(), footer() and for handling small tables
 def is_number(x):
     try:
+        if isinstance(x, str):
+            x = x.replace('(', '').replace(')', '')
         float(x)
         return True
     except (ValueError, TypeError):
