@@ -57,7 +57,9 @@ For [camelot](https://pypi.org/project/camelot-py/) you must have ghostscript an
 
 
 After you have ghostscript installed, to install camelot run:
-`conda install -c conda-forge camelot-py`
+```Bash
+conda install -c conda-forge camelot-py
+```
 
 To install pandas and numpy use pip or conda:
 ```Bash
