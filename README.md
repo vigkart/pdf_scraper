@@ -38,8 +38,27 @@ The PDF Scraper is a tool designed for extracting and processing tables from PDF
 3. **Functionality Limitation:** The script only works with security level flow tables. For diagrams and charts, a different approach will be required.
 
 ## Usage
-- Must have required dependencies (Pandas, Camelot) installed
+- I recommend running this in a Conda environment as that is where Camelot works best
+- Must have required dependencies installed
 - Must have a **pdfs** folder with the pdfs you would like to scrape
 - The pdfs in **pdfs** must have 'ftse' or 'msci' somewhere in the name for the scraper.py to identify its **type**
 - Must have a empty **proc_tables** folder as a destination to store the outputted csvs
 - then run **scraper.py**
+
+## Dependencies:
+This scraper uses the following dependencies:
+- Camelot
+- Pandas
+- Numpy
+
+For [camelot](https://pypi.org/project/camelot-py/) you must have ghostscript and Tkinter installed.
+- On windows, you must install [ghostscript](https://www.ghostscript.com/releases/index.html) manually
+- On windows, Tkinter is already installed with the python distribution
+
+
+After you have ghostscript installed, to install camelot run:
+```conda install -c conda-forge camelot-py```
+
+To install pandas and numpy use pip or conda:
+```pip install pandas
+   pip install numpy```
