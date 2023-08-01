@@ -291,6 +291,13 @@ def scrape_page(path, page_num, output_path):
     df.to_csv(output)
     print(f"Done with page {page_num} in {output_path}")
 
+    # verification of no empty cells:
+    # df.replace("", np.nan, inplace=True)
+    # null_rows = df[df.isnull().any(axis=1)]
+    # if not null_rows.empty:
+    #     print(null_rows)
+    # else:
+    #     print("There are no rows with null values.")
 
 
 # Helper function that calls scrape_page for each page
