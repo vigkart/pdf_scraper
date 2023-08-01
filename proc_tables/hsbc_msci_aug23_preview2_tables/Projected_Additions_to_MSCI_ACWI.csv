@@ -1,7 +1,7 @@
 ,Ticker,Name,Country,DM/EM,Sector,Conviction,Pot'l flows  (USDmm),Pot'l  Shares  (mm),EDT,Price as of  previous  Cutoff (18-  Apr),Price as of  run date  (30-Jun),% Change
 0,POWF IN,Melrose Industries PLC,UK,DM,Industrials,High,495.0,77.0,7.9,350.3,506.2,44.5%
 1,"BESI NA
-SCI SP",BE Semiconductor Industries NV ,Netherlands,DM,Information Technology,High,475.6,4.4,3.3,78.4,99.3,26.6%
+SCI SP",BE Semiconductor Industries NV,Netherlands,DM,Information Technology,High,475.6,4.4,3.3,78.4,99.3,26.6%
 2,3808 HK,Jabil Inc,USA,DM,Information Technology,High,279.0,2.6,2.0,84.2,107.9,28.2%
 3,MRO LN,Stantec Inc,Canada,DM,Industrials,High,249.9,3.8,9.6,79.4,86.5,8.9%
 4,SRPT US,Penumbra Inc,USA,DM,Health Care,High,243.1,0.7,2.1,271.5,344.1,26.7%

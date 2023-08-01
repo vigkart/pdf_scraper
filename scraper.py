@@ -130,29 +130,76 @@ def drop_empty_rows(df):
             df.drop(index, inplace=True)
     return df
 
-# list of valid MSCI EM/DM Countries
-countries = ["Canada", "USA", "Austria", "Belgium", "Denmark", "Finland", "France", 
-             "Germany", "Ireland", "Israel", "Italy", "Netherlands", "Norway", 
-             "Portugal", "Spain", "Sweden", "Switzerland", "UK", "Australia", 
-             "Hong Kong", "Japan", "New Zealand", "Singapore", "Brazil", "Chile", 
-             "Colombia", "Mexico", "Peru", "Czech Republic", "Egypt", "Greece", 
-             "Hungary", "Kuwait", "Poland", "Qatar", "Saudi Arabia", "South Africa", 
-             "Turkey", "UAE", "China", "India", "Indonesia", "Korea", "Malaysia", 
-             "Philippines", "Taiwan", "Thailand"]
+# # list of FTSE countries pulled from: https://research.ftserussell.com/products/downloads/FTSE_Global_Equity_Index_Series.pdf
+# ftse_countries = ["Australia", "Hong Kong", "India", "Indonesia", "Malaysia", 
+#                   "New Zealand", "Pakistan", "Philippines", "Singapore", "Korea", 
+#                   "Taiwan", "Thailand", "China", "Japan", "Austria", "Belgium", 
+#                   "Luxembourg", "Denmark", "Finland", "France", "Germany", "Ireland",
+#                   "Italy", "Netherlands", "Norway", "Poland", "Portugal", "Spain", 
+#                   "Sweden", "Switzerland", "UK", "Czech Republic", "Greece", "Hungary",
+#                   "Iceland", "Romania", "Turkey", "Brazil", "Chile", "Colombia", "Mexico",
+#                   "Egypt", "Israel", "Kuwait", "Qatar", "Saudi Arabia", "South Africa",
+#                   "UAE", "Canada", "USA"]
+
+# # list of valid MSCI EM/DM Countries pulled from: https://www.msci.com/our-solutions/indexes/market-classification
+# msci_countries = ["Canada", "USA", "Austria", "Belgium", "Denmark", "Finland", "France", 
+#                  "Germany", "Ireland", "Israel", "Italy", "Netherlands", "Norway", 
+#                  "Portugal", "Spain", "Sweden", "Switzerland", "UK", "Australia", 
+#                  "Hong Kong", "Japan", "New Zealand", "Singapore", "Brazil", "Chile", 
+#                  "Colombia", "Mexico", "Peru", "Czech Republic", "Egypt", "Greece", 
+#                  "Hungary", "Kuwait", "Poland", "Qatar", "Saudi Arabia", "South Africa", 
+#                  "Turkey", "UAE", "China", "India", "Indonesia", "Korea", "Malaysia", 
+#                  "Philippines", "Taiwan", "Thailand"]
+
+# Combined list of FTSE and MSCI countries
+countries = ['Sweden', 'Romania', 'Hungary', 'Australia', 'UAE', 'Taiwan', 'Turkey', 'Poland', 'Egypt', 
+            'Indonesia', 'Colombia', 'Saudi Arabia', 'Israel', 'Brazil', 'Thailand', 'Portugal', 'Spain', 
+            'Luxembourg', 'Norway', 'Greece', 'Ireland', 'Kuwait', 'South Africa', 'China', 'Mexico', 
+            'Denmark', 'Singapore', 'Malaysia', 'Austria', 'France', 'Iceland', 'Pakistan', 'India', 'Peru', 
+            'Belgium', 'Chile', 'Philippines', 'Qatar', 'Korea', 'New Zealand', 'Germany', 'Switzerland', 
+            'Hong Kong', 'Netherlands', 'Italy', 'Finland', 'Czech Republic', 'Japan', 'Canada', 'USA', 'UK']
 
 # fixes the countries that didn't format correctly
 def fix_country(df):
     if 'Country' in df.columns:
+        df['Country'] = df['Country'].replace('', np.nan)
         nan_rows = df['Country'].isna()
         missing_countries = nan_rows[nan_rows].index.tolist()
-        
+        country_index = df.columns.get_loc('Country')
+                    
         for i in missing_countries:
             for country in countries:
-                if country in df['Name'][i]:
-                    df['Name'][i] = df['Name'][i].replace(country, '')
+                if df.iat[i, country_index-1].endswith(country):
                     df['Country'][i] = country
+                    df.iat[i, country_index-1] = df.iat[i, country_index-1].replace(country, '')
+                
+                elif df.iat[i, country_index+1].startswith(country):
+                    df['Country'][i] = country
+                    df.iat[i, country_index+1] = df.iat[i, country_index+1].replace(country, '')
+        df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
     return df
 
+# list of valid regions for ftse files that are missing proper region formats
+regions = ["Asia Pacific", " Americas", "EMEA"]
+
+def fix_region(df):
+    if 'Region' in df.columns:
+        df['Region'] = df['Region'].replace('', np.nan)
+        nan_rows = df['Region'].isna()
+        missing_region = nan_rows[nan_rows].index.tolist()
+        region_index = df.columns.get_loc('Region')
+
+        for i in missing_region:
+            for region in regions:
+                if df.iat[i, region_index-1].endswith(region):
+                    df['Region'][i] = region
+                    df.iat[i, region_index-1] = df.iat[i, region_index-1].replace(region, '')
+
+                elif df.iat[i, region_index+1].endswith(region):
+                    df['Region'][i] = region
+                    df.iat[i, region_index+1] = df.iat[i, region_index-1].replace(region, '')
+        df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+    return df
 
 def merge_columns_with_blank_headers(df):
     df_new = df.copy()
@@ -212,13 +259,15 @@ def scrape_page(path, page_num, output_path):
         
     # Processing dataframe using helper methods
     df = tables[0].df
+    df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x) # stripping whitespace
     try:
         name = get_name(df, page_num, type)
         df = header(df, type)
         df = footer(df)
         df = drop_empty_rows(df)
-        df = fix_country(df)
         df = merge_columns_with_blank_headers(df)
+        df = fix_country(df)
+        df = fix_region(df)
     except ValueError:
         # Handling a one line table that was formatted incorrectly
         df = tables[0].df
@@ -279,5 +328,3 @@ for file in files:
     if not os.path.exists(output_path):
         os.makedirs(output_path)
     scrape(path, output_path)
-
-

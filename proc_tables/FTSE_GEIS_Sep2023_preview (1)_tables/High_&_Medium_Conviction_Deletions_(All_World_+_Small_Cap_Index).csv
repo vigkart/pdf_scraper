@@ -8,7 +8,7 @@
 6,Small Cap,Hatsun Agro Product,HTSMF IN,HAPL.BO,Consumer Staples,India,Asia Pacific,EM,Deletion(SC),(27.4),(2.3),61.7
 7,Small Cap,Sunway Real Estate Investment Trust,SREIT MK,SUNW.KL,Real Estate,Malaysia,Asia Pacific,EM,Deletion(SC),(26.0),(78.1),64.0
 8,Small Cap,Robinsons Retail Holdings,RRHI PM,RRHI.PS,Consumer Discretionary,Philippines,Asia Pacific,EM,Deletion(SC),(24.7),(23.6),10.6
-9,Small Cap,Jadwa REIT Saudi Fund,JADWAREI AB,4342.SE,Real Estate,Saudi Arabia EMEA,,EM,Deletion(SC),(24.4),(7.0),71.3
+9,Small Cap,Jadwa REIT Saudi Fund,JADWAREI AB,4342.SE,Real Estate,Saudi Arabia,EMEA,EM,Deletion(SC),(24.4),(7.0),71.3
 10,Small Cap,Vibhavadi Medical Center,VIBHA TB,VIBHA.BK,Health Care,Thailand,Asia Pacific,EM,Deletion(SC),(23.0),(328.5),>100
 11,Small Cap,Genting Plantations BHD,GENP MK,GENP.KL,Consumer Staples,Malaysia,Asia Pacific,EM,Deletion(SC),(20.0),(16.0),85.2
 12,Small Cap,Brookfield India Real Estate Trust,BIRET IN,BROF.BO,Real Estate,India,Asia Pacific,EM,Deletion(SC),(19.7),(6.1),59.5
@@ -16,13 +16,13 @@
 14,All World,MNC Studios International,MSIN IJ,MSIN.JK,Consumer Discretionary,Indonesia,Asia Pacific,EM,Deletion(AW),(17.7),(68.0),87.8
 15,Small Cap,RL Commercial REIT,RCR PM,RCR.PS,Real Estate,Philippines,Asia Pacific,EM,Deletion(SC),(16.3),(156.7),>100
 16,Small Cap,PMB Technology,PMBT MK,PMBT.KL,Industrials,Malaysia,Asia Pacific,EM,Deletion(SC),(15.9),(19.3),86.6
-17,Small Cap,Skellerup Holdings,SKL NZ,SKL.NZ,Basic Materials,,New Zealand Asia Pacific,DM,Deletion(SC),(15.7),(5.4),45.6
+17,Small Cap,Skellerup Holdings,SKL NZ,SKL.NZ,Basic Materials,New Zealand,Asia Pacific,DM,Deletion(SC),(15.7),(5.4),45.6
 18,Small Cap,Mega First,MFCB MK,MEGA.KL,Utilities,Malaysia,Asia Pacific,EM,Deletion(SC),(15.2),(22.1),43.7
 19,Small Cap,Medicare Group,MCGS QD,MCGS.QA,Health Care,Qatar,EMEA,EM,Deletion(SC),(14.7),(8.7),29.9
 20,Small Cap,Medartis AG,MED SW,MEDA.S,Health Care,Switzerland,EMEA,DM,Deletion(SC),(13.2),(0.1),27.5
 21,Small Cap,TX Group AG,TXGN SW,TXGN.S,Consumer Discretionary,Switzerland,EMEA,DM,Deletion(SC),(11.5),(0.1),47.8
 22,Small Cap,Artis Real Estate Investment Trust,AX-U CN,AX_u.TO,Real Estate,Canada,Americas,DM,Deletion(SC),(10.8),(2.0),2.1
-23,Small Cap,KMD Brands,KMD NZ,KMD.NZ,Consumer Discretionary,,New Zealand Asia Pacific,DM,Deletion(SC),(10.5),(17.5),9.6
+23,Small Cap,KMD Brands,KMD NZ,KMD.NZ,Consumer Discretionary,New Zealand,Asia Pacific,DM,Deletion(SC),(10.5),(17.5),9.6
 24,Small Cap,MCB Bank,MCB PA,MCB.PSX,Financials,Pakistan,Asia Pacific,EM,Deletion(SC),(9.7),(20.8),15.9
 25,Small Cap,Econocom Group,ECONB BB,ECONB.BR,Technology,Belgium,EMEA,DM,Deletion(SC),(8.9),(3.0),23.1
 26,Small Cap,Cashbuild Ltd,CSB SJ,CSBJ.J,Consumer Discretionary,South Africa,EMEA,EM,Deletion(SC),(8.2),(0.9),57.1
@@ -76,7 +76,7 @@
 74,Small Cap,Toung Loong Textile Manufacturing,4401 TT,4401.TWO,Basic Materials,Taiwan,Asia Pacific,EM,Deletion(SC),(2.8),(3.5),55.7
 75,Small Cap,BRPR Corporate Offices Fundo de Investimento Imobiliario,BROF11 BZ,BROF11.SA,Real Estate,Brazil,Americas,EM,Deletion(SC),(2.7),(0.2),6.7
 76,Small Cap,CAREDX INC,CDNA US,CDNA.OQ,Health Care,USA,Americas,DM,Deletion(SC),(2.7),(0.3),0.2
-77,Small Cap,Pacific Edge Ltd,PEB NZ,PEB.NZ,Health Care,,New Zealand Asia Pacific,DM,Deletion(SC),(2.7),(21.5),7.8
+77,Small Cap,Pacific Edge Ltd,PEB NZ,PEB.NZ,Health Care,New Zealand,Asia Pacific,DM,Deletion(SC),(2.7),(21.5),7.8
 78,Small Cap,TrueBlue,TBI US,TBI.N,Industrials,USA,Americas,DM,Deletion(SC),(2.7),(0.2),0.7
 79,Small Cap,American Well,AMWL US,AMWL.N,Health Care,USA,Americas,DM,Deletion(SC),(2.7),(1.2),1.0
 80,Small Cap,Starpharma Holdings,SPL AU,SPL.AX,Health Care,Australia,Asia Pacific,DM,Deletion(SC),(2.6),(12.2),20.5
