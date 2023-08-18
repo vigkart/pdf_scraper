@@ -1,7 +1,7 @@
 # pdf_scraper
 
 ## Overview
-The PDF Scraper is a tool designed for extracting and processing tables from PDF files in the 'MSCI' and 'FTSE' formats using Camelot and Pandas.
+The PDF Scraper is a tool designed for extracting and processing tables from PDF files in HSBC's 'MSCI' and 'FTSE' formats using Camelot and Pandas.
 ## Process
 1. **scraper.py:** This script drives the extraction process. It loops over all the provided PDF files and invokes the `scrape()` function for each.
 
