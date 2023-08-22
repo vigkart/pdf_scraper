@@ -331,7 +331,9 @@ for file in files:
     
     # Making output directory for each pdf to read and store the tables in individual csv's
     path = os.path.join(directory, file)
-    output_path = r"C:\Users\vkarthik\Documents\vscode\pdf_scraper\proc_tables" + f"\{file.strip('.pdf')}_tables"
+    output_dir = r'proc_tables'
+    output_path = f"{file.strip('.pdf')}_tables"
+    output_path = os.path.join(output_dir, output_path)
     if not os.path.exists(output_path):
         os.makedirs(output_path)
     scrape(path, output_path)
