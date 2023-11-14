@@ -1,0 +1,25 @@
+name: Format Python Code
+
+on: [push, pull_request]
+
+jobs:
+  black:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'  # Use the Python version of your project
+
+    - name: Install Black
+      run: pip install black
+
+    - name: Run Black
+      run: black --check .  # This will check if the code is formatted without changing it
+
+    # Uncomment the following step if you want Black to auto-format your code
+    # - name: Format code with Black
+    #   run: black .
